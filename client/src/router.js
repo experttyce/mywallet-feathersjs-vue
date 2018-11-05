@@ -23,6 +23,14 @@ export default new Router({
     path: '/signin',
     name: 'SignIn',
     component: () => import('./views/SignIn.vue')
+  },
+  {
+    path: '/category',
+    name: 'Category',
+    component: () => import('./views/Category.vue'),
+    meta: {
+      requiresAuth: true
+    }
   }
   ]
 })

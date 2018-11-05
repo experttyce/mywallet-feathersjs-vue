@@ -22,6 +22,20 @@ export default new Vuex.Store({
         password: ''
       }
     }),
+    service('category', {
+      instanceDefaults: {
+        description: ''
+      }
+    }),
+    service('balance', {
+      instanceDefaults: {
+        date: '',
+        description: '',
+        categoryId: '',
+        type: '',
+        amount: ''
+      }
+    }),
     auth({
       userService: 'users'
     })

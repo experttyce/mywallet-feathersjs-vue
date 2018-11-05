@@ -25,8 +25,6 @@
     </v-toolbar-items>
     </v-toolbar>
     <v-content>
-      <pre>{{ user }}</pre>
-
       <router-view></router-view>
     </v-content>
   </v-app>
